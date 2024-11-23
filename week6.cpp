@@ -3,6 +3,7 @@
 #include <iomanip>
 using namespace std;
 
+
 void sort(int*);
 void getNums(int[]);
 void reverse(int[], int[]);
@@ -61,9 +62,9 @@ void sort(int *num){
     }while(checkSwap);
 };
 
-void reverse(int arr1[], int arr2[]){
-    for (int rep = 0; rep < ARRAYLENGTH; rep++){
-        *(arr2 + rep) = *(arr1 + 9 - rep);
+void reverse(int arr[], int newArr[]){
+    for (int i = 0; i < ARRAYLENGTH; i++){
+        newArr[i] = arr[ARRAYLENGTH - i -1];
     }
 };
 
